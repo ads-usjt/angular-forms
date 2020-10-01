@@ -1,5 +1,5 @@
 <div class="container">
-  <form (ngSubmit)="salvar()">
+  <form #personForm (ngSubmit)="salvar(personForm)">
     <div class="row">
       <div class="form-group col-12">
           <label for="nomeInput">

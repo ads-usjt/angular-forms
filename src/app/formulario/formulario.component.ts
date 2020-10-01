@@ -12,7 +12,7 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  salvar() :void {
-    console.log("Form interceptado");
+  salvar(formData) :void {
+    console.log(formData);
   }
 }
