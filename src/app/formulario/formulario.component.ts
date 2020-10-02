@@ -13,6 +13,7 @@ export class FormularioComponent implements OnInit {
   }
 
   salvar(formData) :void {
-    console.log(formData);
+    const { value } = formData.form;
+    console.log(value);
   }
 }

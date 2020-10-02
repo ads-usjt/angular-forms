@@ -5,29 +5,29 @@
           <label for="nomeInput">
             Nome
           </label>
-          <input id="nomeInput" type="text" placeholder="Nome" class="form-control p-4"/>
+          <input ngModel name="name" id="nomeInput" type="text" placeholder="Nome" class="form-control p-4"/>
       </div>
     </div>
 
     <div class="row">
       <div class="form-group col-md-4">
         <label for="foneInput">Fone</label>
-        <input id="foneInput" type="tel" placeholder="Fone" class="form-control p-4"/>
+        <input ngModel name="phone" id="foneInput" type="tel" placeholder="Fone" class="form-control p-4"/>
       </div>
       <!--Emmet  .form-group.col-md-4>(label[for=emailInput]{Email}+input#emailInput[type=text placeholder="Email"].form-control.p-4)-->
       <div class="form-group col-md-4">
         <label for="emailInput">Email</label>
-        <input type="email" id="emailInput" placeholder="Email" class="form-control p-4">
+        <input ngModel name="email" type="email" id="emailInput" placeholder="Email" class="form-control p-4">
       </div>
 
       <div class="form-group col-md-4">
         <label for="profissaoInput">Profissão</label>
-        <select name="" id="profissaoInput" class="form-control">
+        <select ngModel name="profession" id="profissaoInput" class="form-control">
           <option value="" disabled selected>Selecione sua Profissao</option>
-          <option value="">Engenheiro</option>
-          <option value="">Professor</option>
-          <option value="">Químico</option>
-          <option value="">Zoólogo</option>
+          <option>Engenheiro</option>
+          <option>Professor</option>
+          <option>Químico</option>
+          <option>Zoólogo</option>
         </select>
       </div>
     </div>
