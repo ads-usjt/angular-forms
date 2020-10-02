@@ -5,13 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.scss']
 })
-export class FormularioComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class FormularioComponent {
   salvar(formData) :void {
     const { value } = formData.form;
     console.log(value);
